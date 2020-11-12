@@ -39,7 +39,7 @@ function init() {
 }
 
 function openInNewTab(e) {
-    debugger;
+    // debugger;
     if (getCookie('RRDownloadImageCookie') == 'isAllowed' && e.which === 2) {
         //open in new tab on middle click
         var imageLink = getLinkOfPicsVC(e.target.src);
@@ -48,7 +48,7 @@ function openInNewTab(e) {
 }
 
 function downloadFunction(e) {
-    debugger;
+    // debugger;
     if (getCookie('RRDownloadImageCookie') == 'isAllowed') {
         var a = document.createElement('a');
         a.href = e.target.src;
